@@ -651,9 +651,9 @@ def main():
     min_signal_strength = st.sidebar.slider("Minimum Signal Strength", 1, 10, 5)
     
     # Auto-refresh
-    auto_refresh = st.sidebar.checkbox("Auto Refresh (30s)", value=False)
+    auto_refresh = st.sidebar.checkbox("Auto Refresh (5s)", value=False)
     if auto_refresh:
-        time.sleep(30)
+        time.sleep(5)
         st.rerun()
     
     # Manual refresh button
