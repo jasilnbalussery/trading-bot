@@ -653,7 +653,7 @@ def main():
     # Auto-refresh
     auto_refresh = st.sidebar.checkbox("Auto Refresh (30s)", value=False)
     if auto_refresh:
-        time.sleep(0)
+        time.sleep(10)
         st.rerun()
     
     # Manual refresh button
